@@ -1,9 +1,9 @@
-export default ({ id, inputType, placeholder, iconClassName, textContent, className }, isButton) => {
+export default ({ id, inputType, placeholder, iconClassName, textContent, className, type }, isButton) => {
     return(
         `${isButton ? `
               <div class="field">
                     <p class="control">
-                        <button id="${id}" class="button ${className ? className  : `is-success`}">
+                        <button type="${type}" id="${id}" class="button ${className ? className  : `is-success`}">
                             ${textContent}
                         </button>
                     </p>

@@ -99,6 +99,11 @@ img {
   padding-top: 15vh;
 }
 
+.custom-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .landing__main {
   background-image: url("../../public/images/bg.webp");
   background-position: center;
@@ -119,6 +124,25 @@ img {
 
 .home__hero-section figure {
   height: 400px;
+}
+
+.login__main {
+  background-image: url("../../public/images/bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+}
+.login__main .custom-form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

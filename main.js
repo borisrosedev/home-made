@@ -6,6 +6,8 @@ import landingView from "./js/views/landing/index.js"
 import homeView from "./js/views/home/index.js"
 import homemadeHeader from "./js/layout/homemade-header/index.js"
 import HeaderContainer from "./js/containers/header/index.js"
+import LoginContainer from "./js/containers/login/index.js"
+import loginView from "./js/views/login/index.js"
 
 const root = document.getElementById('root')
 
@@ -29,7 +31,6 @@ const navigateTo = (hash) => {
         console.log(window.onNavigate)
         new LandingContainer(window.onNavigate)
     } else if (hash === "#home"){
-
         console.log('home')
         root.innerHTML += homemadeHeader()
         new HeaderContainer(window.onNavigate)
@@ -38,6 +39,8 @@ const navigateTo = (hash) => {
     } else if (hash === "#login"){
         root.innerHTML += homemadeHeader()
         new HeaderContainer(window.onNavigate)
+        root.innerHTML += loginView()
+        new LoginContainer(window.onNavigate)
     }
 }
 
