@@ -1,8 +1,32 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.custom-info-accent {
+  background-color: rgb(207, 125, 63);
+  color: #fff !important;
+}
+
+.custom-success-accent {
+  background-color: rgb(130, 235, 130);
+  color: #000 !important;
+}
+
+.custom-error-accent {
+  background-color: rgb(200, 72, 70);
+  color: #fff !important;
+}
+
+.self-centered {
+  align-self: center;
 }
 
 .show-up {
@@ -59,6 +83,49 @@ img {
   width: 200px;
 }
 
+.custom-emphasis {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-paragraph {
+  color: #000;
+}
+
+.custom-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-slider {
+  height: 200px;
+  display: flex;
+  overflow-x: scroll;
+  flex-direction: row;
+}
+.custom-slider .slider-figure {
+  display: inline;
+  width: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-inline: 10px;
+}
+.custom-slider .slider-figure > img {
+  transition: all ease-in-out 300ms;
+}
+.custom-slider .slider-figure:hover {
+  cursor: pointer;
+}
+.custom-slider .slider-figure:hover > img {
+  transform: scale(1.2);
+}
+
 .homemade-header {
   height: 15vh;
   position: fixed;
@@ -73,7 +140,8 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 20;
 }
-.homemade-header nav, .homemade-header ul {
+.homemade-header nav,
+.homemade-header ul {
   display: flex;
 }
 .homemade-header li {
@@ -99,9 +167,19 @@ img {
   padding-top: 15vh;
 }
 
-.custom-form {
+.homemade-notificator {
+  position: fixed;
+  bottom: 10px;
+  width: fit-content;
   display: flex;
-  flex-direction: column;
+  right: 10px;
+  z-index: 20;
+}
+
+.custom-notification__paragraph {
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 10px;
 }
 
 .landing__main {
@@ -122,8 +200,13 @@ img {
   background-color: #fff;
 }
 
+.home__hero-section .custom-section .unique-selling-proposition {
+  text-align: center;
+  font-size: 18px;
+}
+
 .home__hero-section figure {
-  height: 400px;
+  height: 200px;
 }
 
 .login__main {

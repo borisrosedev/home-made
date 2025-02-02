@@ -1,0 +1,25 @@
+.custom-slider {
+  height: 200px;
+  display: flex;
+  overflow-x: scroll;
+  flex-direction: row;
+
+  .slider-figure {
+    display: inline;
+    width: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-inline: 10px;
+
+    > img {
+      transition: all ease-in-out 300ms;
+    }
+
+    &:hover {
+      cursor: pointer;
+      > img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -1,11 +1,10 @@
 {
-    "arrowParens": "always",
-    "htmlWhitespaceSensitivity": "css",
-    "bracketSpacing": true,
-    "proseWrap": "preserve",
-    "printWidth": 80,
-    "useTabs": false,
-    "trailingComma": "none",
-    "singleQuote": false
-
+  "arrowParens": "always",
+  "htmlWhitespaceSensitivity": "css",
+  "bracketSpacing": true,
+  "proseWrap": "preserve",
+  "printWidth": 80,
+  "useTabs": false,
+  "trailingComma": "none",
+  "singleQuote": false
 }

@@ -1,22 +1,45 @@
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+@use "../abstracts/variables";
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
+.custom-info-accent {
+  background-color: variables.$custom-info-accent-color;
+  color: #fff !important;
+}
+
+.custom-success-accent {
+  background-color: variables.$custom-success-accent-color;
+  color: #000 !important;
+}
+.custom-error-accent {
+  background-color: variables.$custom-error-accent-color;
+  color: #fff !important;
+}
+
+.self-centered {
+  align-self: center;
+}
 
 .show-up {
-    opacity: 0;
-    animation: show-up 1000ms ease-in-out 800ms forwards;
+  opacity: 0;
+  animation: show-up 1000ms ease-in-out 800ms forwards;
 }
 
 .show-down {
-    opacity: 1;
-    animation: show-down 1000ms ease-in-out 800ms forwards;
+  opacity: 1;
+  animation: show-down 1000ms ease-in-out 800ms forwards;
 }
 
 .show {
-    opacity: 0;
-    animation: show 600ms ease-in forwards;
+  opacity: 0;
+  animation: show 600ms ease-in forwards;
 }

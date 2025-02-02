@@ -1,15 +1,14 @@
-import customFigure from "../../components/custom-figure/index.js"
+import customFigure from "../../components/custom-figure/index.js";
 
 export default () => {
-    return(
-        `
+  return `
             <header class="homemade-header"> 
                 <a href="/">
                     ${customFigure({
-                        className:'homemade-header__logo',
-                        id: 'homemade-header-logo',
-                        src: '/public/images/logo.webp',
-                        alt: 'Image du logo de l\'application HomeMade'
+                      className: "homemade-header__logo",
+                      id: "homemade-header-logo",
+                      src: "/public/images/logo.webp",
+                      alt: "Image du logo de l'application HomeMade"
                     })}
                 </a>
                 <nav>
@@ -18,6 +17,5 @@ export default () => {
                     </ul>
                 </na>
             </header>
-        `
-    )
-}
+        `;
+};

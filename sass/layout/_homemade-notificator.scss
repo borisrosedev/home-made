@@ -1,0 +1,14 @@
+.homemade-notificator {
+  position: fixed;
+  bottom: 10px;
+  width: fit-content;
+  display: flex;
+  right: 10px;
+  z-index: 20;
+}
+
+.custom-notification__paragraph {
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 10px;
+}

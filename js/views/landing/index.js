@@ -1,7 +1,6 @@
 export default () => {
-
-    return `
+  return `
         <main id="landing-main" class="homemade-main landing__main"></main>
     
-    `
-}
+    `;
+};

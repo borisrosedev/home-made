@@ -1,10 +1,17 @@
 .home__main {
-    flex-direction: column;
-    background-color: #fff;
+  flex-direction: column;
+  background-color: #fff;
+}
 
+.home__hero-section {
+  .custom-section {
+    .unique-selling-proposition {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
 }
 
 .home__hero-section figure {
-    height: 400px;
-  
+  height: 200px;
 }

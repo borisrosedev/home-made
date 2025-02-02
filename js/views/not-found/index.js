@@ -1,9 +1,8 @@
 export default () => {
-
-    return `
+  return `
         <main class="homemade-main not-found__main">
 
         </main>
     
-    `
-}
+    `;
+};
